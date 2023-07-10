@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "801859574811",
+    "project_id": "gym-controller-8dbe8",
+    "storage_bucket": "gym-controller-8dbe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801859574811:android:b26fa2f9ba780f4829ecbe",
+        "android_client_info": {
+          "package_name": "com.example.gym_controller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801859574811-885iij3j779jsgqkss2p1lvcrp97jc5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEauitzGRetQ5quY9kcSR8absmALkNsiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801859574811-885iij3j779jsgqkss2p1lvcrp97jc5m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "801859574811-h3470m06crgrmomm4lofgp5nb1muip02.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gymController"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
