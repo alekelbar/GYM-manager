@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class ThemeConfig {
   final ThemeData theme = ThemeData(
-    colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
+    colorSchemeSeed: Colors.white70,
     useMaterial3: true,
-    // brightness: Brightness.dark,
+    brightness: Brightness.light,
   );
 
   ThemeData getTheme() => theme;
