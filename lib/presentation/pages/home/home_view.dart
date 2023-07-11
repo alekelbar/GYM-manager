@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:gym_controller/data/register_mock.dart';
-import 'package:gym_controller/domain/entities/register_entity.dart';
+import 'package:gym_controller/infrastructure/datasources/firebase_register_datasource_impl.dart';
+import 'package:gym_controller/infrastructure/models/register_model.dart';
+import 'package:gym_controller/infrastructure/repositories/firebase_register_repository_impl.dart';
 import 'package:gym_controller/presentation/bloc/auth/auth_bloc.dart';
+import 'package:gym_controller/presentation/helpers/get_image.dart';
 
 class HomeView extends StatelessWidget {
   static const String name = "home-view";
@@ -64,7 +67,7 @@ class HomeView extends StatelessWidget {
             ],
           ),
           floatingActionButton:
-              (state is Autenticated ? const _HomeFloatActionButton() : null),
+              (state is Autenticated ? _HomeFloatActionButton() : null),
           body: state is Autenticated
               ? const _AutenticatedHomeView()
               : const Center(
@@ -157,13 +160,40 @@ class _AutenticatedHomeView extends StatelessWidget {
 }
 
 class _HomeFloatActionButton extends StatelessWidget {
-  const _HomeFloatActionButton();
+  _HomeFloatActionButton();
+
+  final repository =
+      FirebaseRegisterRepositoryImpl(FirebaseRegisterDatasourceImpl());
 
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      onPressed: () {},
+      onPressed: () {
+        _show(context);
+      },
       child: const FaIcon(FontAwesomeIcons.plus),
     );
   }
+}
+
+void _show(BuildContext context) {
+  ScaffoldMessenger.of(context)
+    ..clearSnackBars()
+    ..showSnackBar(
+      SnackBar(
+        content: Column(
+          children: [
+            TextButton(
+              onPressed: () => getImage(),
+              child: const Text("Galería"),
+            ),
+            TextButton(
+              onPressed: () => getImage(true),
+              child: const Text("Camára"),
+            ),
+          ],
+        ),
+        duration: const Duration(seconds: 3),
+      ),
+    );
 }
