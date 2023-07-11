@@ -1,4 +1,5 @@
 import 'package:gym_controller/domain/entities/register_entity.dart';
+import 'package:gym_controller/infrastructure/models/register_model.dart';
 
 final List<RegisterEntity> registerEntityMock = [
   RegisterEntity(
