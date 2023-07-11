@@ -1,4 +1,4 @@
-enum WeightType { kg, lb }
+import 'package:gym_controller/infrastructure/models/register_model.dart';
 
 class RegisterEntity {
   final String imageUrl;
@@ -7,6 +7,7 @@ class RegisterEntity {
   final WeightType weightType;
   final String reps;
   final String series;
+  String? id;
 
   RegisterEntity({
     required this.imageUrl,
