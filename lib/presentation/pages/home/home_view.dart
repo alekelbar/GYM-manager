@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 import 'package:gym_app/data/register_mock.dart';
 import 'package:gym_app/infrastructure/datasources/firebase_register_datasource_impl.dart';
 import 'package:gym_app/infrastructure/models/register_model.dart';
 import 'package:gym_app/infrastructure/repositories/firebase_register_repository_impl.dart';
 import 'package:gym_app/presentation/bloc/auth/auth_bloc.dart';
 import 'package:gym_app/presentation/helpers/get_image.dart';
+import 'package:gym_app/presentation/pages/pages.dart';
 
 class HomeView extends StatelessWidget {
   static const String name = "home-view";
@@ -169,32 +171,9 @@ class _HomeFloatActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: () {
-        _show(context);
+        context.pushNamed(AddRegisterScreen.name);
       },
       child: const FaIcon(FontAwesomeIcons.plus),
     );
   }
-}
-
-void _show(BuildContext context) {
-  ScaffoldMessenger.of(context)
-    ..clearSnackBars()
-    ..showSnackBar(
-      SnackBar(
-        showCloseIcon: true,
-        content: Row(
-          children: [
-            TextButton(
-              onPressed: () => getImage(),
-              child: const Text("Galería"),
-            ),
-            TextButton(
-              onPressed: () => getImage(),
-              child: const Text("Camára"),
-            ),
-          ],
-        ),
-        duration: const Duration(seconds: 3),
-      ),
-    );
 }

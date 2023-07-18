@@ -14,5 +14,10 @@ final appRouter = GoRouter(
       builder: (context, state) => const LoginView(),
       name: LoginView.name,
     ),
+    GoRoute(
+      path: '/add_register',
+      builder: (context, state) => const AddRegisterScreen(),
+      name: AddRegisterScreen.name,
+    ),
   ],
 );
