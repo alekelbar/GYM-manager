@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:gym_controller/data/register_mock.dart';
-import 'package:gym_controller/infrastructure/datasources/firebase_register_datasource_impl.dart';
-import 'package:gym_controller/infrastructure/models/register_model.dart';
-import 'package:gym_controller/infrastructure/repositories/firebase_register_repository_impl.dart';
-import 'package:gym_controller/presentation/bloc/auth/auth_bloc.dart';
-import 'package:gym_controller/presentation/helpers/get_image.dart';
+import 'package:gym_app/data/register_mock.dart';
+import 'package:gym_app/infrastructure/datasources/firebase_register_datasource_impl.dart';
+import 'package:gym_app/infrastructure/models/register_model.dart';
+import 'package:gym_app/infrastructure/repositories/firebase_register_repository_impl.dart';
+import 'package:gym_app/presentation/bloc/auth/auth_bloc.dart';
+import 'package:gym_app/presentation/helpers/get_image.dart';
 
 class HomeView extends StatelessWidget {
   static const String name = "home-view";
@@ -181,14 +181,15 @@ void _show(BuildContext context) {
     ..clearSnackBars()
     ..showSnackBar(
       SnackBar(
-        content: Column(
+        showCloseIcon: true,
+        content: Row(
           children: [
             TextButton(
               onPressed: () => getImage(),
               child: const Text("Galería"),
             ),
             TextButton(
-              onPressed: () => getImage(true),
+              onPressed: () => getImage(),
               child: const Text("Camára"),
             ),
           ],

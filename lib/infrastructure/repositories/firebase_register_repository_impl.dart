@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:gym_controller/domain/datasources/firebase_register_datasource.dart';
-import 'package:gym_controller/domain/entities/register_entity.dart';
-import 'package:gym_controller/domain/repositories/firebase_register_repository.dart';
+import 'package:gym_app/domain/datasources/firebase_register_datasource.dart';
+import 'package:gym_app/domain/entities/register_entity.dart';
+import 'package:gym_app/domain/repositories/firebase_register_repository.dart';
 
 class FirebaseRegisterRepositoryImpl extends FirebaseRegisterRepository {
   final FirebaseRegisterDatasource datasource;

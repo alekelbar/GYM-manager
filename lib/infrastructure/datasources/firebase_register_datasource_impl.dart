@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:gym_controller/domain/datasources/firebase_register_datasource.dart';
-import 'package:gym_controller/domain/entities/register_entity.dart';
-import 'package:gym_controller/infrastructure/mapper/register_mapper.dart';
-import 'package:gym_controller/infrastructure/models/register_model.dart';
+import 'package:gym_app/domain/datasources/firebase_register_datasource.dart';
+import 'package:gym_app/domain/entities/register_entity.dart';
+import 'package:gym_app/infrastructure/mapper/register_mapper.dart';
+import 'package:gym_app/infrastructure/models/register_model.dart';
 import 'package:uuid/uuid.dart';
 
 class FirebaseRegisterDatasourceImpl extends FirebaseRegisterDatasource {

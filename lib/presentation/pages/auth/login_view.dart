@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:gym_controller/presentation/bloc/auth/auth_bloc.dart';
-import 'package:gym_controller/presentation/pages/home/home_view.dart';
+import 'package:gym_app/presentation/bloc/auth/auth_bloc.dart';
+import 'package:gym_app/presentation/pages/home/home_view.dart';
 
 class LoginView extends StatelessWidget {
   static const name = "login-view";

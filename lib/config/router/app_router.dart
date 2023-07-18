@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:gym_controller/presentation/pages/pages.dart';
+import 'package:gym_app/presentation/pages/pages.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/',

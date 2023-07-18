@@ -1,4 +1,4 @@
-import 'package:gym_controller/infrastructure/models/register_model.dart';
+import 'package:gym_app/infrastructure/models/register_model.dart';
 
 class RegisterEntity {
   final String imageUrl;

@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAEauitzGRetQ5quY9kcSR8absmALkNsiI',
-    appId: '1:801859574811:android:b26fa2f9ba780f4829ecbe',
+    appId: '1:801859574811:android:4ea0750a88c9a63929ecbe',
     messagingSenderId: '801859574811',
     projectId: 'gym-controller-8dbe8',
     storageBucket: 'gym-controller-8dbe8.appspot.com',
@@ -59,11 +59,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyA897U8dzAFjdHixMpYITvLFok6RnwcuFk',
-    appId: '1:801859574811:ios:b6ba70b4ece0302529ecbe',
+    appId: '1:801859574811:ios:3c2fbecc3389d83429ecbe',
     messagingSenderId: '801859574811',
     projectId: 'gym-controller-8dbe8',
     storageBucket: 'gym-controller-8dbe8.appspot.com',
-    iosClientId: '801859574811-h3470m06crgrmomm4lofgp5nb1muip02.apps.googleusercontent.com',
-    iosBundleId: 'com.example.gymController',
+    androidClientId: '801859574811-dm6a7bckdub4qbm1u0dl4b07nkakq8eo.apps.googleusercontent.com',
+    iosClientId: '801859574811-hvlju8uvbpj32dh2egrhpjjn838eqsil.apps.googleusercontent.com',
+    iosBundleId: 'com.example.gymApp',
   );
 }

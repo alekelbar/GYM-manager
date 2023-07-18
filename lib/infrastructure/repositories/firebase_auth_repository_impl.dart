@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:gym_controller/domain/datasources/firebase_auth_datasource.dart';
-import 'package:gym_controller/domain/repositories/firebase_auth_repository.dart';
+import 'package:gym_app/domain/datasources/firebase_auth_datasource.dart';
+import 'package:gym_app/domain/repositories/firebase_auth_repository.dart';
 
 class FirebaseAuthRepositoryImpl extends FirebaseAuthRepository {
   final FirebaseAuthDatasource datasource;

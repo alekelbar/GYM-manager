@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:gym_controller/domain/entities/register_entity.dart';
+import 'package:gym_app/domain/entities/register_entity.dart';
 
 abstract class FirebaseRegisterDatasource {
   Stream<RegisterEntity> getRegisters({required String userEmail});

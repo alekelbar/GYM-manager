@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:image_picker/image_picker.dart';
 
-Future<File?> getImage([bool fromCam = false]) async {
+Future<File?> getImage({fromCam = false}) async {
   final picker = ImagePicker();
   final XFile? image = await picker.pickImage(
       source: fromCam ? ImageSource.camera : ImageSource.gallery);
