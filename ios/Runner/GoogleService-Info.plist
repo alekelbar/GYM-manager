@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>801859574811-h3470m06crgrmomm4lofgp5nb1muip02.apps.googleusercontent.com</string>
+	<string>801859574811-hvlju8uvbpj32dh2egrhpjjn838eqsil.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.801859574811-h3470m06crgrmomm4lofgp5nb1muip02</string>
+	<string>com.googleusercontent.apps.801859574811-hvlju8uvbpj32dh2egrhpjjn838eqsil</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>801859574811-dm6a7bckdub4qbm1u0dl4b07nkakq8eo.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyA897U8dzAFjdHixMpYITvLFok6RnwcuFk</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.gymController</string>
+	<string>com.example.gymApp</string>
 	<key>PROJECT_ID</key>
 	<string>gym-controller-8dbe8</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:801859574811:ios:b6ba70b4ece0302529ecbe</string>
+	<string>1:801859574811:ios:3c2fbecc3389d83429ecbe</string>
 </dict>
 </plist>
